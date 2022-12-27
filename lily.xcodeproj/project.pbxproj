@@ -10,7 +10,6 @@
 		CBD5FB90295B3D7E000A1651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5FB8F295B3D7E000A1651 /* AppDelegate.swift */; };
 		CBD5FB92295B3D7E000A1651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5FB91295B3D7E000A1651 /* SceneDelegate.swift */; };
 		CBD5FB94295B3D7E000A1651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5FB93295B3D7E000A1651 /* ViewController.swift */; };
-		CBD5FB97295B3D7E000A1651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD5FB95295B3D7E000A1651 /* Main.storyboard */; };
 		CBD5FB99295B3D80000A1651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD5FB98295B3D80000A1651 /* Assets.xcassets */; };
 		CBD5FB9C295B3D80000A1651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD5FB9A295B3D80000A1651 /* LaunchScreen.storyboard */; };
 		CBD5FBA7295B3D80000A1651 /* lilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD5FBA6295B3D80000A1651 /* lilyTests.swift */; };
@@ -40,7 +39,6 @@
 		CBD5FB8F295B3D7E000A1651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD5FB91295B3D7E000A1651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBD5FB93295B3D7E000A1651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBD5FB96295B3D7E000A1651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD5FB98295B3D80000A1651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD5FB9B295B3D80000A1651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD5FB9D295B3D80000A1651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,11 @@
 		CBD5FB8E295B3D7E000A1651 /* lily */ = {
 			isa = PBXGroup;
 			children = (
-				CBD5FB8F295B3D7E000A1651 /* AppDelegate.swift */,
-				CBD5FB91295B3D7E000A1651 /* SceneDelegate.swift */,
-				CBD5FB93295B3D7E000A1651 /* ViewController.swift */,
-				CBD5FB95295B3D7E000A1651 /* Main.storyboard */,
-				CBD5FB98295B3D80000A1651 /* Assets.xcassets */,
-				CBD5FB9A295B3D80000A1651 /* LaunchScreen.storyboard */,
-				CBD5FB9D295B3D80000A1651 /* Info.plist */,
+				CBD5FBC3295B4104000A1651 /* App */,
+				CBD5FBC2295B40F9000A1651 /* Models */,
+				CBD5FBC1295B40EB000A1651 /* ViewModels */,
+				CBD5FBC0295B40DA000A1651 /* Controllers */,
+				CBD5FBBF295B40D4000A1651 /* Views */,
 			);
 			path = lily;
 			sourceTree = "<group>";
@@ -125,6 +121,47 @@
 				CBD5FBB2295B3D80000A1651 /* lilyUITestsLaunchTests.swift */,
 			);
 			path = lilyUITests;
+			sourceTree = "<group>";
+		};
+		CBD5FBBF295B40D4000A1651 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBD5FBC0295B40DA000A1651 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5FB93295B3D7E000A1651 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBD5FBC1295B40EB000A1651 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CBD5FBC2295B40F9000A1651 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBD5FBC3295B4104000A1651 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBD5FB8F295B3D7E000A1651 /* AppDelegate.swift */,
+				CBD5FB91295B3D7E000A1651 /* SceneDelegate.swift */,
+				CBD5FB98295B3D80000A1651 /* Assets.xcassets */,
+				CBD5FB9A295B3D80000A1651 /* LaunchScreen.storyboard */,
+				CBD5FB9D295B3D80000A1651 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +270,6 @@
 			files = (
 				CBD5FB9C295B3D80000A1651 /* LaunchScreen.storyboard in Resources */,
 				CBD5FB99295B3D80000A1651 /* Assets.xcassets in Resources */,
-				CBD5FB97295B3D7E000A1651 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBD5FB95295B3D7E000A1651 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBD5FB96295B3D7E000A1651 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBD5FB9A295B3D80000A1651 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,11 +467,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQX48B3375;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = lily/Info.plist;
+				INFOPLIST_FILE = lily/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,11 +497,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQX48B3375;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = lily/Info.plist;
+				INFOPLIST_FILE = lily/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
