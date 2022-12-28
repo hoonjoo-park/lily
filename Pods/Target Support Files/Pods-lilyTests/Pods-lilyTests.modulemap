@@ -1,0 +1,6 @@
+framework module Pods_lilyTests {
+  umbrella header "Pods-lilyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
